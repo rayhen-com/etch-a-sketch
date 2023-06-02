@@ -1,13 +1,15 @@
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
     background-color: #333333;
 }
 .tile {
+    box-sizing: border-box;
     border-style: solid;
     border-width: 0.5px;
     border-color: black;
-    flex-basis: calc(6.25% - 1px)
 }
 
 #container {
@@ -20,4 +22,8 @@ body {
 
 .tile-hover {
     background-color: royalblue;
+}
+
+button {
+    width: 600px;
 }
